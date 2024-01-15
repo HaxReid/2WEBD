@@ -1,0 +1,54 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+.carousel{
+    display: flex;
+    justify-content: center;
+    width: 50%;
+}
+.carousel .slide{
+    height: 80vh;
+}
+.carousel .slide img{
+    max-height : 100%;
+    max-width : auto;
+}
+.image{
+    margin: 0 auto;
+    height: 100%;
+    width: auto;
+}
+@media only screen and (max-width: 1200px){
+    .carousel{
+        height: 90vh;
+    }
+}
+@media only screen and (max-width: 900px){
+    .carousel{
+        height: 80vh;
+    }
+}
+@media only screen and (max-width: 750px){
+    .carousel{
+        height: 70vh;
+    }
+}
+@media only screen and (max-width: 650px){
+    .carousel{
+        height: 60vh;
+    }
+}
+@media only screen and (max-width: 500px){
+    .carousel{
+        height: 50vh;
+    }
+}
+
+.spinner{
+    margin-left: 47%;
+    margin-top: 5%;
+    height: 75px;
+    width: 75px;
+}

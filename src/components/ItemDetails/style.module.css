@@ -1,0 +1,40 @@
+.detailscontainer{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    background-color: rgb(153, 204, 238);
+}
+
+.primaryImage{
+    height: 500px;
+    width: auto;
+}
+
+.imgdiv{
+    border:5px ridge black;
+    flex:1;
+    text-align:center ;
+}
+
+.specsdiv{
+    border:5px ridge black;
+    flex:1;
+    text-align:left;
+}
+
+.li {
+    list-style-type: disc;
+    margin-left: 2em;
+    margin-top: 2em;
+}
+
+@media (max-width: 900px) {
+    .detailscontainer {
+    flex-direction: column;
+    }
+    .primaryImage{
+        height: 250px;
+        width: auto;
+        margin: 10px;
+    }
+}
