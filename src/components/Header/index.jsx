@@ -16,9 +16,7 @@ export function Header () {
     const response = await fetch(apiUrl);
     const searchResults = await response.json();
 
-    console.log('total',searchResults.objectIDs);
     const limitateSearchResults = searchResults.objectIDs.slice(0, 10);
-    console.log('limitated', limitateSearchResults);
     navigate('/results', { state: { results: limitateSearchResults } });
   };
 
